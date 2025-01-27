@@ -13,8 +13,7 @@
       color: #333;
     }
     .navbar {
-      background-color: #333;
-      overflow: hidden;
+      background-color: #3      background-color: #3      overflow: hidden;
       border-bottom: 2px solid #555;
     }
     .navbar a {
@@ -49,6 +48,24 @@
       width: 100%;
       bottom: 0;
     }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
@@ -63,6 +80,14 @@
   <div class="content">
     <h1>WTFGame导航页</h1>
     <p>wtfgame服务器</p>
+    <div class="button-container">
+      <a href="https://game.elfive.cn:91/wtfgame/" class="button">elfive服</a>
+      <a href="http://154.211.15.42:9191/wtfgame/" class="button">论坛服</a>
+      <a href="http://160.202.232.88:43943/" class="button">测试服</a>
+      <a href="https://wtf.0s.ink/" class="button">测试服论坛</a>
+      <a href="https://wtfgame.xyz/index.php" class="button">论坛服论坛</a>
+      <a href="https://game.0s.ink/" class="button">测试服导航页</a>
+    </div>
   </div>
   <div class="footer">
     <p>&copy; 2025 WTFGame. All rights reserved.</p>
