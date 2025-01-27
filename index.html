@@ -12,8 +12,16 @@
 </head>
 
 <body>
-	<iframe src="https://game.elfive.cn:91/wtfgame/" title="elfive" width="400" height="300"></iframe>
-	<iframe src="https://game.0s.ink/" title="测试服" width="400" height="300"></iframe>
+<iframe id="myIframe1" src="https://wtfgame.xyz/index.php" style="width:100%;"></iframe>
+<iframe id="myIframe2" src="https://wtf.0s.ink/" style="width:100%;"></iframe>
+<script>
+  var iframes = document.querySelectorAll('iframe');
+  iframes.forEach(function(iframe) {
+    iframe.onload = function() {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    };
+  });
+</script>
     <script src='./js/114514.js'></script>
 </body>
 
